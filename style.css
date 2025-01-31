@@ -17,7 +17,7 @@ body {
 /* Navbar Container */
 .navbar {
     width: 100%;
-    height: 75px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ body {
 
 /* Logo */
 .logo {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -52,7 +52,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     transition: 0.5s ease;
 }
 
@@ -69,7 +69,7 @@ body {
 /* Hamburger Menu */
 .menu-icon {
     display: none;
-    font-size: 28px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 0;
         background: #000000;
         width: 100%;
@@ -100,11 +100,11 @@ body {
 }
 
 .box {
-    height: 75px;
+    height: 50px;
 }
 
 .box-line {
-    height: 75px;
+    height: 50px;
     width: 90%;
     margin: auto;
     border-bottom: 1px solid #ffffff;
@@ -123,7 +123,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -199,9 +199,8 @@ main {
 }
 
 .container {
-    /*width: 100%;
-    max-width: 80%;*/
-    width: min(1500px,90vw);
+    width: 100%;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -219,7 +218,7 @@ main {
 }
 
 .member-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border: #fff 1px solid;
     box-shadow: 1px 1px 30px #ffffff;
 }
@@ -236,16 +235,28 @@ main {
 }
 
 .member-info h1 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
 .member-info p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.5;
 }
 .member-info .contact {
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
     margin-right: 10px;
+}
+@media (max-width: 600px) {
+    .member-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .member-card img {
+        width: 250px;
+        height: 250px;
+    }
 }
