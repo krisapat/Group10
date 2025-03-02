@@ -273,18 +273,6 @@ main {
         text-align: center;
     }
 
-    .side4-img {
-        flex-direction: column;
-    }
-
-    .side4-img img {
-        margin-bottom: 20px;
-    }
-    .side4-img img{
-        width: 200px;
-        height: auto;
-        object-fit: cover;
-    }
 }
 
 footer {
@@ -377,15 +365,27 @@ footer {
 }
 
 .side4-img {
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
-.side4-img img{
-    height: 300px; /* ความสูงที่ต้องการให้เท่ากัน */
-    width: auto; /* กว้างอัตโนมัติตามสัดส่วน */
-    object-fit: cover; /* ป้องกันภาพยืดเบี้ยว */
-}
 
+.side4-img img {
+    height: 300px;
+    /* สูง 300px บนจอใหญ่ */
+    width: auto;
+    object-fit: cover;
+}
+@media (max-width: 768px){
+    .side4-img{
+        flex-direction: column;
+    }
+    .side4-img img {
+        width: 200px;
+        /* กว้าง 200px */
+        height: auto;
+        /* คงสัดส่วน */
+        margin-bottom: 20px;
+    }
+}
