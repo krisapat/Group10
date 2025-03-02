@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "IBM Plex Sans", serif;
 }
 
 body {
@@ -57,13 +57,13 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ff0000;
-    text-decoration: underline 5px #ff0000;
+    color: #00ac7c;
+    text-decoration: underline 5px #00ac7c;
 }
 
 .nav-links .Home {
-    color: #ff0000;
-    text-decoration: underline 5px #ff0000;
+    color: #00ac7c;
+    text-decoration: underline 5px #00ac7c;
 }
 
 /* Hamburger Menu */
@@ -240,15 +240,19 @@ main {
 }
 
 .member-info p {
+    font-family: "IBM Plex Sans Thai", serif;
+    font-weight: 500;
     font-size: 15px;
     line-height: 1.5;
 }
+
 .member-info .contact {
     height: 25px;
     width: 25px;
     margin-right: 10px;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
     .member-card {
         flex-direction: column;
         text-align: center;
@@ -259,4 +263,129 @@ main {
         width: 250px;
         height: 250px;
     }
+
+    .introduce-function {
+        flex-direction: column;
+    }
+
+    .introduce-function-text {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .side4-img {
+        flex-direction: column;
+    }
+
+    .side4-img img {
+        margin-bottom: 20px;
+    }
+    .side4-img img{
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+    }
 }
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduce-function {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.introduce-function-box,
+.introduce-function-img {
+    flex-basis: 50%;
+}
+
+.introduce-function-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.introduce-function-text h1,
+.side2-head h1,
+.side3-head h1 {
+    font-size: 50px;
+}
+
+.introduce-function-text h3,
+.side2-paragraph p,
+.side3-paragraph p {
+    font-size: 30px;
+}
+
+.introduce-function-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduce-function-img img {
+    height: 572px;
+    width: 289px;
+}
+
+.side2,
+.side3 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side2-paragraph,
+.side2-head,
+.side3-paragraph,
+.side3-head {
+    width: 100%;
+    text-align: left;
+}
+
+.side2-head h1,
+.side3-head h1 {
+    margin-bottom: 20px;
+}
+
+.side2-paragraph p,
+.side3-paragraph p {
+    font-family: "IBM Plex Sans Thai", serif;
+    font-weight: 500;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.side4-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.side4-img img{
+    height: 300px; /* ความสูงที่ต้องการให้เท่ากัน */
+    width: auto; /* กว้างอัตโนมัติตามสัดส่วน */
+    object-fit: cover; /* ป้องกันภาพยืดเบี้ยว */
+}
+
